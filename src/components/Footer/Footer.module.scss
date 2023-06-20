@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
+
+.container{
+    width: 100%;
+    height: 13vh;
+    margin: 0 auto;
+    background-color: rgb(25,25,25);
+    padding: 1rem;
+    .container__footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 1300px;
+        margin: 0 auto;
+        .container__copy{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 75%;
+            p{
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    
+        .container__social{
+            min-width: 15%;
+            width: auto;
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 968px){
+    .container{
+        width: 100%;
+        height: 14vh;
+        .container__footer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .container__copy{
+                justify-content: center;
+                width: 100%;
+            }
+
+            .container__social{
+                min-width: 60%;
+                width: auto;
+                margin-top: 1rem;
+                justify-content: space-around;
+            }
+
+        }
+    }
+}

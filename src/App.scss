@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color: black;
+
+  &::-webkit-scrollbar{
+      width: 10px;
+  }
+  &::-webkit-scrollbar-track{
+      background: black;
+  }
+  &::-webkit-scrollbar-thumb{
+      background: gray;
+      border-radius: 2px;
+  }
+}
+
+.App{
+  min-height: calc(100vh - 13.14vh - 50px);
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 968px){
+  .App{
+      min-height: calc(100vh - 13.14vh - 50px);
+  }
+}

@@ -1,0 +1,260 @@
+@import '../../style/style.scss';
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .container__oneSection{
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0;
+
+        .container__oneSection__gradient{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: linear-gradient(-180deg, transparent, rgba(0, 0, 0));
+            width: 100%;
+            height: 100vh;
+            
+            h1{
+                color: $color-font-main;
+                font-size: 5rem; 
+                margin-top: 8rem;
+            }
+    
+            p{
+                color: $color-font-main;
+                font-size: 1.3rem;
+                margin: 2rem auto
+            }
+    
+            button{
+                @include styleButton;
+            }
+        }
+    }
+
+
+    .container__twoSection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        background-color: $color-background-secondary;
+        margin: 2rem 0;
+        img{
+            width: 40%;
+            align-self: center;
+        }
+
+        .container__twoSection__welcome{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 45%;
+            padding: 1.5rem;
+
+            h3{
+                color: $color-font-main;
+                font-size: 1.5rem;
+                font-family: sans-serif;
+                font-style: italic;
+            }
+
+            b{
+                margin: 1rem 0;
+                color: $color-font-main;
+            }
+
+            p{
+                color: $color-font-secondary;
+                font-size: 1.3rem;
+            }
+
+            button{
+                @include styleButton;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .container__threeSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0; 
+        position: relative;
+        
+        h3{
+            margin-top: 2rem;
+            color: $color-font-main;
+            font-size: 2.5rem;
+            text-shadow: 0px 0 15px black;
+            font-style: italic;
+
+            b{
+                color: red;
+            }
+        }
+
+        .container__threeSection__gradient{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: radial-gradient(transparent 30%,  rgba(0, 0, 0) 70%);
+            width: 100%;
+            height: 100vh;
+
+            .container__threeSection__gradient__list{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin: auto;
+                max-width: 1300px;
+            }
+
+            .container__threeSection__gradient__list__card{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 300px;
+                height: 200px;
+                margin-bottom: 2rem;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0;
+                position: relative;
+                cursor: pointer;
+                transition: all 800ms;
+
+                &:hover{
+                    box-shadow: 0 0 15px black;
+                }
+
+                .container__threeSection__gradient__list__card__gradient{
+                    width: 100%;
+                    min-height: 80px;
+                    height: auto;
+                    padding: 0 1rem 1rem 1rem;
+                    background: rgba(0, 0, 0, 0.700);
+                    position: absolute;
+                    bottom: 0;
+
+                    h4{
+                        color: $color-font-main;
+                    }
+
+                    p{
+                        color: $color-font-secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .container__fourSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90vh;
+        background-color: $color-background-secondary;
+        h3{
+            font-family: sans-serif;
+            font-size: 2.0rem;
+            color: $color-font-main;
+            margin-bottom: 2rem;
+
+        }
+
+        .container__fourSection__form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 300px;
+                height: 500px;
+                object-fit: cover;
+                margin-right: 1rem;
+                box-shadow: -5px 0px 10px black;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 968px){
+    .container{
+        width: 100%;
+        .container__oneSection{
+            width: 100%;
+            .container__oneSection__gradient{
+                width: 100%;
+
+                h1{
+                    font-size: 3rem;
+                }
+
+                p{
+                    text-align: center;
+                }
+            }
+        }
+
+        .container__twoSection{
+            width: 100%;
+            height: auto;
+            flex-direction: column-reverse;
+            padding: 1rem 0;
+            .container__twoSection__welcome{
+                width: 100%;
+            }
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .container__threeSection{
+            height: auto;
+            background-repeat: cover;
+            .container__threeSection__gradient{
+                height: auto;
+
+                h3{
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .container__fourSection{
+            width: 100%;
+            height: 80vh;
+            .container__fourSection__form{
+                width: 100%;
+                img{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,30 @@
+
+
+$color-background: black;
+$color-background-secondary: rgb(30, 30, 30);
+
+$color-font-main: white;
+$color-font-secondary: rgb(170, 170, 170);
+
+@mixin styleButton {
+    padding: 10px 20px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    background-color: rgb(222, 61, 56);
+    color: white;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+    &:hover{
+        // transform: scale(1.05);
+        box-shadow: 0 0 10px black;
+        background-color: rgb(255, 16, 8);
+    }
+
+    &:disabled{
+        background-color: rgb(255, 69, 69);
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
