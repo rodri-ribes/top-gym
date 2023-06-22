@@ -52,7 +52,7 @@ export const Menu = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 50%;
+    width: 40%;
 
     @media screen and (max-width: 968px){
         width: 100%;

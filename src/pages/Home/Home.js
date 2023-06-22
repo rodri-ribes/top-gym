@@ -22,7 +22,7 @@ export default function Home() {
             <div className={style.container__oneSection} style={{ backgroundImage: `url(./img/portada.jpg)` }}>
                 <div className={style.container__oneSection__gradient} id={"home"}>
                     <h1  >TOP-GYM</h1>
-                    <p>Nisi exercitation enim commodo irure culpa laboris veniam cupidatat sit incididunt est.</p>
+                    <p>"Strength does not come from what you can do, but from overcoming what you thought was impossible"</p>
                     <button onClick={() => window.location.assign("/#programs")} data-aos="fade-up" >TRAIN NOW</button>
                 </div>
             </div>
@@ -30,9 +30,9 @@ export default function Home() {
             <div className={style.container__twoSection}>
                 <div className={style.container__twoSection__welcome}>
                     <h3>WELCOME TO TOP-GYM</h3>
-                    <b>Nisi exercitation enim commodo irure culpa laboris veniam cupidatat sit incididunt est.</b>
-                    <p>Ex exercitation qui non eu est occaecat nulla cupidatat incididunt labore nulla. Incididunt reprehenderit pariatur quis ad aute amet labore et ad ut. Ipsum ipsum id ut et sint laborum deserunt. Aliquip nulla veniam do laboris exercitation ea amet pariatur ut cupidatat ex reprehenderit tempor. Ut tempor laborum officia occaecat.
-                        Cupidatat Lorem officia officia id cillum sint tempor ut nostrud laboris ut. Id consequat esse ullamco tempor. Ipsum nisi labore amet qui excepteur exercitation. Proident adipisicing cupidatat.</p>
+                    <b>The best day to start was yesterday, today is the second best day.</b>
+                    <p>It is very important in the life of people of any age to practice physical exercise, that is, physical activity that improves and maintains the physical fitness, health and well-being of the person. Everyone should practice physical exercise. In the elderly, the daily practice of physical activity is beneficial for certain diseases: diabetes, dyslipidemia, osteoarthritis, obesity.
+                        <br /> What are you waiting for? Start today!</p>
                     <button onClick={() => window.location.assign("/#contact")}>SIGN UP</button>
                 </div>
                 <img src='./img/twoSection.jpg' alt='welcome' />
