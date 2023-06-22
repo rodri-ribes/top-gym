@@ -29,11 +29,11 @@ $ git clone https://github.com/rodri-ribes/top-gym.git
 ```
 ### Screenshots
 ***
-![image](client/public/screenshots/1.PNG)
+![image](./public/screenshots/1.PNG)
 ***
-![image](client/public/screenshots/2.PNG)
+![image](./public/screenshots/2.PNG)
 ***
-![image](client/public/screenshots/3.PNG)
+![image](./public/screenshots/3.PNG)
 ***
-![image](client/public/screenshots/4.PNG)
+![image](./public/screenshots/4.PNG)
 ***
